@@ -10,6 +10,9 @@
     <height>450</height>
    </rect>
   </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -52,6 +55,948 @@ Line{
 
 </string>
     </property>
+    <widget class="QLineEdit" name="cityLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>10</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="dateLable">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>3</y>
+       <width>321</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>20</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 20pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>2022-10-8</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="Line" name="Hline_1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>45</y>
+       <width>781</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="Hline_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>183</y>
+       <width>351</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="Hline_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>335</y>
+       <width>351</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>10</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 20pt &quot;华文琥珀&quot;;
+background-color::rgba(255,255,255,0);
+color: rgba(0,255,0,255)
+</string>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="text">
+      <string>天气预报</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>351</width>
+       <height>145</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="3" column="0">
+       <widget class="QLabel" name="flTitleLb">
+        <property name="text">
+         <string>风力</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="shiduTitleLb_2">
+        <property name="text">
+         <string>湿度</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="fxTitleLb">
+        <property name="text">
+         <string>风向</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="pm25TilleLb">
+        <property name="text">
+         <string>PM2.5</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2">
+       <widget class="QLabel" name="shiduLb">
+        <property name="text">
+         <string>95%</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QLabel" name="pm25Lb">
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="2">
+       <widget class="QLabel" name="fxLb">
+        <property name="text">
+         <string>西北风</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" colspan="2">
+       <widget class="QLabel" name="flLb">
+        <property name="text">
+         <string>&lt;3级</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>50</y>
+       <width>440</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_9">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="horizontalSpacing">
+         <number>2</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>0</number>
+        </property>
+        <item row="2" column="3">
+         <widget class="QLabel" name="quality3Lb">
+          <property name="styleSheet">
+           <string notr="true">color:rgb(255,100,0);</string>
+          </property>
+          <property name="text">
+           <string>中度污染</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="3">
+         <widget class="QLabel" name="high3Lb">
+          <property name="text">
+           <string>10°</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="5">
+         <widget class="QLabel" name="type5Lb">
+          <property name="text">
+           <string>阴</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="5">
+         <widget class="QLabel" name="high5Lb">
+          <property name="text">
+           <string>10°</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="5" rowspan="2">
+         <widget class="QLabel" name="typeIco5Lb">
+          <property name="styleSheet">
+           <string notr="true">image:url(:/day/day/小雨.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="quality1Lb">
+          <property name="styleSheet">
+           <string notr="true">color:rgb(255,255,0)</string>
+          </property>
+          <property name="text">
+           <string>良好</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="type0Lb">
+          <property name="text">
+           <string>阴</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="low0Lb">
+          <property name="text">
+           <string>-1</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="date1Lb">
+          <property name="text">
+           <string>02/02</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="4">
+         <widget class="QLabel" name="low4Lb">
+          <property name="text">
+           <string>-1</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLabel" name="type3Lb">
+          <property name="text">
+           <string>阴</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="date0Lb">
+          <property name="text">
+           <string>01/01</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QLabel" name="type4Lb">
+          <property name="text">
+           <string>阴</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLabel" name="date3Lb">
+          <property name="text">
+           <string>04/04</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="quality0Lb">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0,170,0);</string>
+          </property>
+          <property name="text">
+           <string>优质</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="5">
+         <widget class="QLabel" name="quality5Lb">
+          <property name="text">
+           <string>良</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3" rowspan="2">
+         <widget class="QLabel" name="typeIco3Lb">
+          <property name="styleSheet">
+           <string notr="true">image:url(:/day/day/小雨.png);
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="2">
+         <widget class="QLabel" name="low2Lb">
+          <property name="text">
+           <string>-1</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QLabel" name="week4Lb">
+          <property name="text">
+           <string>周五</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="5">
+         <widget class="QLabel" name="low5Lb">
+          <property name="text">
+           <string>-1</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" rowspan="2">
+         <widget class="QLabel" name="typeIco0Lb">
+          <property name="styleSheet">
+           <string notr="true">image:url(:/day/day/小雨.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QLabel" name="date5Lb">
+          <property name="text">
+           <string>06/06</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2" rowspan="2">
+         <widget class="QLabel" name="typeIco2Lb">
+          <property name="styleSheet">
+           <string notr="true">image:url(:/day/day/小雨.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="week3Lb">
+          <property name="text">
+           <string>后天</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QLabel" name="low1Lb">
+          <property name="text">
+           <string>-1</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4" rowspan="2">
+         <widget class="QLabel" name="typeIco4Lb">
+          <property name="styleSheet">
+           <string notr="true">image:url(:/day/day/小雨.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="type1Lb">
+          <property name="text">
+           <string>阴</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="week0Lb">
+          <property name="text">
+           <string>昨天</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="2">
+         <widget class="QLabel" name="high2Lb">
+          <property name="text">
+           <string>10°</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="quality2Lb">
+          <property name="styleSheet">
+           <string notr="true">color:rgb(255,170,0);</string>
+          </property>
+          <property name="text">
+           <string>轻度污染</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLabel" name="high1Lb">
+          <property name="text">
+           <string>10°</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="week1Lb">
+          <property name="text">
+           <string>今天</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLabel" name="type2Lb">
+          <property name="text">
+           <string>阴</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QLabel" name="quality4Lb">
+          <property name="styleSheet">
+           <string notr="true">color:rgb(255,0,0);</string>
+          </property>
+          <property name="text">
+           <string>严重污染</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLabel" name="date4Lb">
+          <property name="text">
+           <string>05/05</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="high0Lb">
+          <property name="text">
+           <string>10°</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="week2Lb">
+          <property name="text">
+           <string>明天</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="4">
+         <widget class="QLabel" name="high4Lb">
+          <property name="text">
+           <string>10°</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="date2Lb">
+          <property name="text">
+           <string>03/03</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QLabel" name="week5Lb">
+          <property name="text">
+           <string>周六</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="3">
+         <widget class="QLabel" name="low3Lb">
+          <property name="text">
+           <string>-1</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1" rowspan="2">
+         <widget class="QLabel" name="typeIco1Lb">
+          <property name="styleSheet">
+           <string notr="true">image:url(:/day/day/小雨.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0" rowspan="3" colspan="6">
+         <widget class="QLabel" name="curveLb">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>50</y>
+       <width>160</width>
+       <height>37</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_12">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_39">
+        <property name="styleSheet">
+         <string notr="true">background-color: argb(60,60,60,0);
+image: url(:/weatherIco/location.ico);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="cityLb">
+        <property name="styleSheet">
+         <string notr="true">font: 25 16pt &quot;微软雅黑 Light&quot;;</string>
+        </property>
+        <property name="text">
+         <string>长沙</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="leafLb">
+     <property name="geometry">
+      <rect>
+       <x>18</x>
+       <y>58</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/weatherIco/leaf.ico);
+background-color: argb(255.255,255,0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="qualityLb">
+     <property name="geometry">
+      <rect>
+       <x>38</x>
+       <y>58</y>
+       <width>56</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: argb(255,255,255,0);</string>
+     </property>
+     <property name="text">
+      <string>优</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="temLb">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>90</y>
+       <width>131</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255,255,255);
+font: 50pt &quot;Arial&quot;;</string>
+     </property>
+     <property name="text">
+      <string>9°</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="typeLb">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>130</y>
+       <width>72</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255,255,255);
+background-color: argb(60,60,60,0);</string>
+     </property>
+     <property name="text">
+      <string>晴</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="typeIcoLb">
+     <property name="geometry">
+      <rect>
+       <x>255</x>
+       <y>63</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/day/day/晴.png);
+background-color: argb(60,60,60,0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="noticeLb">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>351</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255,255,255);
+background-color: argb(60,60,60,0);</string>
+     </property>
+     <property name="text">
+      <string>天气信息提示</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>340</y>
+       <width>171</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_13">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="styleSheet">
+         <string notr="true">background-color: argb(60,60,60,130);
+border-radius: 3px;
+color: rgb(255,255,255);</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;感&lt;br/&gt;冒&lt;br/&gt;指&lt;br/&gt;数&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QTextBrowser" name="gangmaoBrowser"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="Line" name="vLine1">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>340</y>
+       <width>1</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="searchBtn">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>10</y>
+       <width>47</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/weatherIco/search.ico);</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="refreshBtn">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>10</y>
+       <width>37</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/weatherIco/refresh.ico);
+background-color: argb(255,255,255,0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="icons/icons.qrc">
+       <normaloff>:/weatherIco/refresh.ico</normaloff>:/weatherIco/refresh.ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>31</width>
+       <height>31</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sunriseLb">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>340</y>
+       <width>161</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <zorder>dateLable</zorder>
+    <zorder>Hline_1</zorder>
+    <zorder>Hline_2</zorder>
+    <zorder>Hline_3</zorder>
+    <zorder>gridLayoutWidget</zorder>
+    <zorder>gridLayoutWidget_3</zorder>
+    <zorder>gridLayoutWidget_4</zorder>
+    <zorder>leafLb</zorder>
+    <zorder>qualityLb</zorder>
+    <zorder>temLb</zorder>
+    <zorder>typeLb</zorder>
+    <zorder>typeIcoLb</zorder>
+    <zorder>noticeLb</zorder>
+    <zorder>gridLayoutWidget_5</zorder>
+    <zorder>vLine1</zorder>
+    <zorder>refreshBtn</zorder>
+    <zorder>sunriseLb</zorder>
+    <zorder>cityLineEdit</zorder>
+    <zorder>label</zorder>
+    <zorder>searchBtn</zorder>
    </widget>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
@@ -74,8 +1019,23 @@ Line{
     </rect>
    </property>
   </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>400</y>
+     <width>62</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="icons/icons.qrc"/>
+ </resources>
  <connections/>
 </ui>
