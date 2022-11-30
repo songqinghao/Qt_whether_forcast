@@ -9,7 +9,7 @@
 #include <map>
 #include <QFile>
 #include <QApplication>
-
+#include <QDebug>
 class WeatherTool
 {
 public:

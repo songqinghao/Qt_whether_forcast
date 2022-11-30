@@ -35,7 +35,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //菜单父类为Main
     exitMenu = new QMenu(this);
     exitAction=new QAction;
-    exitAction->setText("exitApp");
+    exitAction->setText("退出");
     //“:”表示资源路径的根目录，icon\icons.qrc不是路径，是资源配置文件
     exitAction->setIcon(QIcon(":/weatherIco/close.ico"));
     //菜单添加行为
